@@ -1,23 +1,9 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const stats = require('./webpack.devServer.config')
 
 module.exports = {
   devServer: {
-    stats: {
-      colors: true,
-      hash: false,
-      version: true,
-      timings: true,
-      assets: false,
-      chunks: false,
-      modules: false,
-      reasons: false,
-      children: false,
-      source: false,
-      errors: true,
-      errorDetails: true,
-      warnings: true,
-      publicPath: false,
-    },
+    stats,
     port: 3000,
   },
   module: {

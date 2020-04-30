@@ -1,0 +1,16 @@
+module.exports = {
+  colors: true,
+  hash: false,
+  version: true,
+  timings: true,
+  assets: false,
+  chunks: false,
+  modules: false,
+  reasons: false,
+  children: false,
+  source: false,
+  errors: true,
+  errorDetails: true,
+  warnings: true,
+  publicPath: false,
+}
