@@ -22,3 +22,41 @@ body {
   font-size: 1.6rem;
   background-color: #eceff1;
 }
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+.wrapper {
+  padding: 1em 0;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.full {
+  transition: opacity 400ms ease 0ms;
+}
+
+.thumb {
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: visibility 0ms ease 400ms;
+}
